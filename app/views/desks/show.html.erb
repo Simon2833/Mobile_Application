@@ -23,6 +23,6 @@ asdasdasdasdsadasd
 
 <%= link_to 'Edit', edit_desk_path(@desk), class:"btn btn-dark" %>
 <%= link_to 'Back', desks_path, class:"btn btn-dark" %>
-<%= link_to 'Delete', @desk, method: "delete", data: { confirm: 'Are you sure?' }, class: "btn btn-danger" %>
+<%= link_to 'Delete', @desk, data: { turbo_method: :delete}, class: "btn btn-danger" %>
 
 </div>
