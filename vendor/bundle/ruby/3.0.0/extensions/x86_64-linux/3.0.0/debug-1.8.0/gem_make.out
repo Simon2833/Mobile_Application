@@ -1,0 +1,16 @@
+current directory: /home/grucha/Desktop/Hot_Desk/HotDesk/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+/home/grucha/.asdf/installs/ruby/3.0.0/bin/ruby -I /home/grucha/.asdf/installs/ruby/3.0.0/lib/ruby/3.0.0 -r ./siteconf20231014-35554-6hrini.rb extconf.rb
+creating Makefile
+
+current directory: /home/grucha/Desktop/Hot_Desk/HotDesk/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR=" clean
+
+current directory: /home/grucha/Desktop/Hot_Desk/HotDesk/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR="
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /home/grucha/Desktop/Hot_Desk/HotDesk/vendor/bundle/ruby/3.0.0/gems/debug-1.8.0/ext/debug
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20231014-35554-777ouk/debug
