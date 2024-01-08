@@ -1,5 +1,7 @@
 class DesksController < ApplicationController
   before_action :set_desk, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!
+  before_action :correct_user_admin, only: [:edit, :update, :destroy, :create]
 
   # GET /desks or /desks.json
   def index
@@ -56,6 +58,15 @@ class DesksController < ApplicationController
       format.json { head :no_content }
     end
   end
+
+  def correct_user_admin
+    
+    @isadmin = current_user.is_admin
+    redirect_to desks_path, notice: "not authorized to edit" if @isadmin.nil?
+
+  end
+
+
 
   private
     # Use callbacks to share common setup or constraints between actions.

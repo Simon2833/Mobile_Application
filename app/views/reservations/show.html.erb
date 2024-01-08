@@ -1,0 +1,28 @@
+
+<div class="jumbotron">
+
+
+<h1 class="display-4">
+
+Reservation <%= @reservation.id%> is made by user:
+<%= @reservation.user_id%>
+
+</h1>
+
+
+
+<p class="lead">
+
+It starts at <%= @reservation.start_date%> and ends at <%= @reservation.end_date%>
+
+</p>
+
+
+
+<br/>
+
+<%= link_to 'Edit', edit_reservation_path(@reservation), class:"btn btn-dark" %>
+<%= link_to 'Back', reservations_path, class:"btn btn-dark" %>
+<%= link_to 'Delete', @reservation, data: { turbo_method: :delete}, class: "btn btn-danger" %>
+
+</div>
