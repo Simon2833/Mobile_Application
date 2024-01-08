@@ -1,24 +1,7 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Jest to projekt z przedmiotu Aplikacje Mobilne na temat Rezerwacja Hot-Desk.
 
-Things you may want to cover:
+Aplikacja powinna pozwalać na obsługę rezerwacji biurek w zakładzie pracy w systemie hot-desk. W związku z tym niezbędne będzie utworzenie dwóch ról: Administratora i Pracownika. Pierwszy powinien mieć uprawnienia do edytowania liczby dostępnych miejsc i szczegółów na temat ich lokalizacji itp., a pracownik — do zarezerwowania wybranego biurka na określony przez siebie okres. 
 
-* Ruby version
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
